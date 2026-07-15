@@ -2,6 +2,8 @@
 
 ## AI Usage
 <!-- Fill in at the end — how you used AI tools during this project -->
+I used ChatGPT to verify my reasoning with the default visibility and sort order comments. It helped me realize some new counter-arguments, which I have added. 
+Last project I didn't use AI at all, and I said that in the AI Usage section, but I got points deducted for that section. Why?
 
 ## Comment 1 — Rename
 **What I did:**
@@ -47,3 +49,6 @@ I ran git rebase --continue and there was no conflict. I was surprised because I
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
+![alt text](image.png)
+New/update features include deduplicating films in watchlist, sorting the watchlist by data_added. A new test file is created for testing watchlist functionalities: tests/test_watchlist.py
+Function save_to_watchlist() is renamed to add_to_watchlist() to follow the naming convention.
