@@ -5,11 +5,14 @@
 
 ## Comment 1 — Rename
 **What I did:**
+I renamed save_to_watchlist() to add_to_watchlist() in services/watchlist_service.py and update all call sites
 **How I verified:**
-
+I checked if there was any other function calls of save_to_watchlist() in the project and made sure there is none.
 ## Comment 2 — Deduplication
 **What I did:**
+I added deduplication logic in add_to_watchlist() by checking if the film is already in the user's watchlist before adding it.
 **How I verified:**
+I ran the app and tested the "watchlist/<user_id>/add" endpoint with an existing film.
 
 ## Comment 3 — Missing test
 **What I did:**
