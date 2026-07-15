@@ -50,5 +50,6 @@ I ran git rebase --continue and there was no conflict. I was surprised because I
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
 ![alt text](image.png)
-New/update features include deduplicating films in watchlist, sorting the watchlist by data_added. A new test file is created for testing watchlist functionalities: tests/test_watchlist.py
+New/update features include deduplicating films in watchlist, sorting the watchlist by data_added. A new test file is created for testing watchlist functionalities: tests/test_watchlist.py. Run it with pytest tests/test_watchlist.py
 Function save_to_watchlist() is renamed to add_to_watchlist() to follow the naming convention.
+Keep the current visibility of watchlist as True.
