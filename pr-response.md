@@ -26,7 +26,7 @@ User's watchlist should be set to public.
 **Reasoning:**
 It is more convenient that way for friends to check out what the others are interested in watching in the future. It serves as a recommendation feature also.
 **Tradeoff acknowledged:**
-One's watchlist's privacy is lost. I could imagine someone wanting to save private stuff to watch later. I supposed this is why ColectionEntry doesn't have public set to True.
+Many users don't realize their watchlist is public until after they've added items. If the default is public, they may accidentally expose personal interests.
 
 ## Comment 5 — Sort order
 **My position:**
@@ -34,7 +34,9 @@ I agree with sorting by date added.
 **Reasoning:**
 Similar reasoning with the reviewer: "Most users want to see what they added recently"
 **Engagement with reviewer's point:**
-Agreed. I mustn't have noticed that when sorting by alphabetical order. I'll fix that in this commit.
+Agreed. I mustn't have noticed that when sorting by alphabetical order. I'll fix that in this commit. However there is one subtle counter-argument I want to address:
+Chronological order becomes less useful for large watchlists.
+If someone has 400 movies saved, the movie they added two years ago becomes difficult to find.Alphabetical ordering is much more predictable in this case.
 ## Comment 6 — Rebase
 **What conflicted:**
 **How I resolved it:**
