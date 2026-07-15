@@ -12,11 +12,13 @@ I checked if there was any other function calls of save_to_watchlist() in the pr
 **What I did:**
 I added deduplication logic in add_to_watchlist() by checking if the film is already in the user's watchlist before adding it.
 **How I verified:**
-I ran the app and tested the "watchlist/<user_id>/add" endpoint with an existing film.
+I ran the app and tested the "watchlist/<user_id>/add" endpoint with an existing film. I also included it in the test_watchlist.py file.
 
 ## Comment 3 — Missing test
 **What I did:**
+I wrote the new test_collection.py file, following the test_collection.py file, but only with the first 3 tests (adding, deduplicating, nonexisting)
 **How I verified:**
+I ran the test file and confirm it worked.
 
 ## Comment 4 — Default visibility
 **My position:**
