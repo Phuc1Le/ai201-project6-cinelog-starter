@@ -39,8 +39,11 @@ Chronological order becomes less useful for large watchlists.
 If someone has 400 movies saved, the movie they added two years ago becomes difficult to find.Alphabetical ordering is much more predictable in this case.
 ## Comment 6 — Rebase
 **What conflicted:**
+Only the files in .gitignore conflicted, not the Film id refactoring, for some reason.
 **How I resolved it:**
+Both current change and incoming change work, so I just use the Current Change
 **How I verified no conflict remains:**
+I ran git rebase --continue and there was no conflict. I was surprised because I thought the film migration to UUID would be a conflict, but when I checked models.py, generate_uuid had been used for film id.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
